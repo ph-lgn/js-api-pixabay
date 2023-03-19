@@ -1,0 +1,270 @@
+body {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+header {
+    height: 400px;
+    background: url(../../img/hand-painted-watercolor-pastel-sky-background_23-2148902771.avif) center/cover;
+    .searching {
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .choice {
+        padding: 25px;
+        border-radius: 8px;
+        background: white;
+        display: flex;
+        gap: 20px;
+    }
+}
+
+.logoPx {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    h2 {
+        text-align: center;
+        padding: 45px;
+        font-size: 35px;
+        color: rgb(56, 168, 212);
+        margin: 0;
+    }
+    a {
+        align-self: flex-start;
+        padding: 20px;
+    }
+    svg {
+        height: 35px;
+        color: white;
+    }
+}
+
+.choiceLeft {
+    color: rgb(81, 126, 126);
+    input {
+        border: none;
+        padding: 10px;
+        color:rgb(113, 196, 196)
+    }
+    input:focus {
+        outline-color: rgb(113, 196, 196);
+    }
+    input::placeholder {
+        color:rgb(113, 196, 196);
+    }
+    i {
+        cursor: pointer;
+    }
+
+
+}
+
+.choiceRight {
+    padding: 10px;
+    color:rgb(113, 196, 196);
+}
+
+
+.empty {
+    width: 80%;
+    margin: 10px auto;
+    display: flex;
+    justify-content: center;
+    color: red;
+    font-weight: 600;
+}
+
+// ----------------wrapper
+
+.wrapper {
+    border-radius: 5px;
+    padding: 10px;
+    // background: #e6c2e370;
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    columns: 4;
+    column-gap: 20px;
+    // ou  display: grid;
+    // grid-template-columns: repeat(4, 1fr);
+    // grid-template-rows: repeat(5, 1fr) ;
+    // gap: 20px;
+    position: relative;
+}
+.imageWrapper {
+    width:100%;
+    position: relative;
+    img {
+        max-width: 100%;
+        position: relative;
+    }
+    
+}
+.imgGrid {
+    position: relative;}
+
+.imgGrid i {
+    font-size: 35px;
+    color: #e6c2e3;
+    padding: 10px;
+    cursor: pointer;
+    position: absolute;
+    top: 15%;
+    left: 90%;
+    transform: translate(-50%,-50%);
+    
+}
+
+.affichage {
+    color: rgb(99, 96, 96);
+    border-radius: 8px;
+    padding: 20px;
+    width: 400px;
+    background: #e6c2e3;
+    gap: 15px;
+    margin: 40px auto;
+    display: flex;
+    justify-content: center;
+    select {
+        padding: 10px;
+        border-radius: 8px;
+        color: #8c758a;
+    }
+
+}
+
+.title {
+    color: rgb(113, 196, 196);
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 25px;
+    strong {
+        font-size: 35px;
+        color: rgb(73, 128, 128);
+    }
+}
+
+// -----video
+.video {
+    padding: 10px;
+    max-width: 550px;
+    position: relative;
+    .image_id {
+        width: 90%;
+
+        img {
+            max-width: 100%;
+        }
+    }
+}
+
+.video i {
+    font-size: 35px;
+    color: #e6c2e3;
+    padding: 10px;
+    cursor: pointer;
+    position: absolute;
+    top: 15%;
+    left: 10%;
+    transform: translate(-50%,-50%);
+    
+}
+
+// --------- popup
+
+
+.active {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    line-height: 40px;
+    color: #a39e9e;
+    padding: 15px;
+    border-radius: 8px;
+    background: rgba(0, 0, 0, 0.685);
+    width: 50%;
+    height: 60%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    i {
+        cursor: pointer;
+        border-radius: 5px;
+        color: #d1cfcf;
+        padding: 15px;
+        background: #f7f7f7;
+        align-self: flex-end;
+    }
+    i:hover {
+        background: #aca8a8;
+    }
+    .img {
+        margin: 0 auto;
+        width: 80%;
+        height: 70%;
+        margin-bottom: 15px;
+        display: flex;
+        justify-content: center;
+        img {
+            max-width: 100%;
+            
+        }
+
+    }
+
+span {
+    color: white;
+    font-size: 22px;
+}
+a {
+    color: white;
+}
+a:hover {
+    color: rgb(106, 122, 156);
+
+}
+
+video {
+    max-width: 800px;
+}
+
+}
+
+ 
+// ---- bottom
+
+.up {
+    cursor: pointer;
+    position: fixed;
+    bottom: 10px;
+    right: 20px;
+    color: rgb(133, 127, 127);
+    padding: 25px;
+    border-radius: 50%;
+    background: url(../../img/hand-painted-watercolor-pastel-sky-background_23-2148902771.avif) center/cover;
+    width:100px;
+    height: 100px;
+    margin: 85px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    i {
+        cursor: pointer;
+        font-size: 25px;
+    }
+
+}
+
+// format
+
+.vertical {
+    max-height: 100%;
+    max-width: none;
+  }

@@ -1,0 +1,18 @@
+/* appeler les autres sous-dossier*/
+
+
+@import 'abstracts/variables';
+@import 'abstracts/mixins';
+
+@import 'base/normalize';
+@import 'base/typography';
+
+@import 'layout/nav';
+@import 'layout/header';
+@import 'layout/footer';
+@import 'layout/forms';
+@import 'layout/global';
+
+@import 'pages/home';
+
+
